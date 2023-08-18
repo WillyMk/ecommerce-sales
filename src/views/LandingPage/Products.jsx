@@ -21,7 +21,8 @@ const Products = () => {
     let params = {
       addedToCart: true,
       ...value,
-    };
+   };
+   
     let updateState = state.map((product) => {
       if (product.id === params.id) {
         return params;
