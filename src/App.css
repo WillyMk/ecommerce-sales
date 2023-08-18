@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Btn {
+  position: relative;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: flex-start;
+  width: 100px;
+  height: 30px;
+  border: none;
+  padding: 0px 20px;
+  background-color: rgb(88, 144, 230);
   color: white;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 12px;
+  box-shadow: 5px 5px 0px rgb(97, 99, 210);
+  transition-duration: 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.svg {
+  width: 13px;
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+  fill: white;
+  transition-duration: 0.3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Btn:hover {
+  color: transparent;
+}
+
+.Btn:hover svg {
+  right: 43%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  transition-duration: 0.3s;
+}
+
+.Btn:active {
+  transform: translate(3px, 3px);
+  transition-duration: 0.3s;
+  box-shadow: 2px 2px 0px rgb(140, 32, 212);
+}
+
+html {
+  --section-background-color: linear-gradient(
+    to bottom left,
+    rgb(5, 8, 40),
+    rgb(1, 4, 39)
+  );
+
+  --image-gradient: linear-gradient(
+    to bottom left,
+    rgba(5, 8, 40, 0.87),
+    rgba(1, 4, 39, 0.925)
+  );
+
+  --imp-text-color: #7500fa;
+  --imp-bold-text-color: #7500fa;
+}
+
+.yellow {
+  color: var(--imp-bold-text-color) !important;
+}
+
+.purple {
+  color: var(--imp-text-color) !important;
+}
+
+button:focus {
+  box-shadow: none !important;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2d005c;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(77, 1, 165, 0.959);
+  border-radius: 12px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(121, 7, 250);
+  border-radius: 12px;
 }

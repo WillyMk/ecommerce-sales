@@ -1,0 +1,18 @@
+.product-image{
+ text-align: center;
+}
+
+.cards-container{
+ background: rgb(27, 10, 79);
+}
+.cards-container1{
+ background: rgb(27, 10, 79);
+}
+.cards-container h1{
+ color: whitesmoke;
+}
+.cards-container1 h1{
+ color: whitesmoke;
+ margin-top: 80px;
+ height: 100%;
+}
